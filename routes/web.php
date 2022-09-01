@@ -17,5 +17,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [ImageController::class, 'index'])->name('overview');
 
 Route::post('/image/upload', [ImageController::class, 'convert'])->name('upload');
-
-Route::get('/image/download', [ImageController::class, 'download'])->name('download');
